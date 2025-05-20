@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文到日语实时翻译</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>中文到日语实时翻译</h1>
+        <div class="controls">
+            <button id="startBtn" class="btn">开始录音</button>
+            <button id="stopBtn" class="btn" disabled>停止录音</button>
+        </div>
+        <div class="status">
+            <p>状态: <span id="status">就绪</span></p>
+        </div>
+        <div class="transcript-container">
+            <div class="transcript-box">
+                <h3>识别到的中文:</h3>
+                <p id="chineseText"></p>
+            </div>
+            <div class="transcript-box">
+                <h3>翻译后的日语:</h3>
+                <p id="japaneseText"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
